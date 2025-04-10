@@ -2,7 +2,7 @@
 /**
  * The current version of the theme.
  */
-define('ENVO_ONLINE_STORE_VERSION', '1.0.6');
+define('ENVO_ONLINE_STORE_VERSION', '1.1.1');
 
 add_action('after_setup_theme', 'envo_online_store_setup');
 
@@ -405,13 +405,13 @@ if (!function_exists('envo_online_store_entry_footer')) :
 
 endif;
 
-if (!function_exists('envo_online_store_generate_construct_footer')) :
+if (!function_exists('envo_online_store_copyright_construct_footer')) :
     /**
      * Build footer
      */
-    add_action('envo_online_store_generate_footer', 'envo_online_store_generate_construct_footer');
+    add_action('envo_online_store_copyright_footer', 'envo_online_store_copyright_construct_footer');
 
-    function envo_online_store_generate_construct_footer() {
+    function envo_online_store_copyright_construct_footer() {
         ?>
         <div class="footer-credits-text text-center">
             <?php
